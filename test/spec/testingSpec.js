@@ -27,6 +27,10 @@ describe('testing function', function() {
     var localAirServer;
     localAirServer = request(app);
     return localAirServer.get('/search?order=1-12345-1').end(function(err, res) {
+      var servicesMock;
+      servicesMock = nock(services.addressLink).get('/search?order=1-12345-1').reply(200, {
+        order: '1-12345-1'
+      });
       res.body.order.should.equal('1-12345-1');
       res.status.should.equal(200);
       return done();

@@ -18,13 +18,14 @@ describe 'testing function', ->
 	it 'should use supertest to simulating hosting server', (done)->
 		localAirServer = request(app)
 
-		# mock up services.
-		#servicesMock = nock(services.addressLink)
-		#.get('/search?order=1-12345-1')
-		#.reply(200, {order:'1-12345-1'})
-
 		localAirServer.get('/search?order=1-12345-1')
 		.end((err, res)->
+
+			# mock up services.
+			servicesMock = nock(services.addressLink)
+			.get('/search?order=1-12345-1')
+			.reply(200, {order:'1-12345-1'})
+
 			res.body.order.should.equal('1-12345-1')
 			res.status.should.equal(200)
 			#servicesMock.done()

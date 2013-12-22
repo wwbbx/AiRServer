@@ -6,7 +6,6 @@ express = require('express');
 search = require('./services');
 
 route = function(app) {
-  app.use(express["static"](__dirname + '/public'));
   return app.get('/search', function(req, res) {
     return search(req, function(result) {
       return res.send(result);

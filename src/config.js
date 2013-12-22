@@ -4,7 +4,7 @@ var config, express;
 express = require('express');
 
 config = function(app) {
-  app.set('port', 9898);
+  app.set('port', process.env.PORT || 9898);
   app.use(express.logger());
   app.use(express.compress());
   app.use(express.methodOverride());

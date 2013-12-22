@@ -6,8 +6,6 @@ searchModel = require('./searchModel');
 searchResult = require('./searchResult');
 
 search = function(req, callback) {
-  this.addressLink = "http://" + req.headers.host;
-  console.log(this.addressLink);
   if (req.param('model')) {
     searchModel(req.param('model'), function(result) {
       return callback(result);

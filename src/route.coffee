@@ -4,7 +4,7 @@ search = require './services'
 
 route = (app)->
 	# static public file exploring
-	app.use(express.static(__dirname + '/public'))
+	#app.use(express.static(__dirname + '/public'))
 
 	#app.use('/', (req, res)->
 	#	res.send('Root of this server.')

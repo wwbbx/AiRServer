@@ -3,8 +3,6 @@ searchModel = require './searchModel'
 searchResult = require './searchResult'
 
 search = (req, callback)->
-	@addressLink = "http://#{req.headers.host}"
-	console.log @addressLink
 
 	if(req.param('model'))
 		searchModel(req.param('model'), (result)->

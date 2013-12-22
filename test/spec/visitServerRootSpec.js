@@ -13,13 +13,17 @@ should();
 
 describe('AiR RESTFul APIs', function() {
   return it('should return fake cso if searching "order"', function(done) {
-    var scope;
-    scope = nock("http://localhost:" + (app.get('port'))).get('/search?order=1-12345-1').reply(200, {
-      order: "1-12345-1"
-    });
-    return request('http://localhost:9898').get('/search?order=1-12345-1').end(function(err, res) {
+    var expected, queryString, scope;
+    expected = {
+      order: '1-1234567890-1'
+    };
+    queryString = '/search?roder=1-1234567890-1';
+    scope = nock("http://localhost:" + (app.get('port'))).get(queryString).reply(200, expected);
+    return request('http://localhost:9898').get(queryString).end(function(err, res) {
+      var actual;
       res.status.should.equal(200);
-      res.body.order.should.equal('1-12345-1');
+      actual = res.body;
+      actual.order.should.equal(expected.order);
       scope.done();
       return done();
     });

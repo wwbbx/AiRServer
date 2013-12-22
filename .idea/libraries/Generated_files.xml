@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/test/spec/visitServerRootSpec.js" />
+        <item url="file://$PROJECT_DIR$/test/spec/testingSpec.js" />
+        <item url="file://$PROJECT_DIR$/test/spec/servicesForDeveloper.js" />
+        <item url="file://$PROJECT_DIR$/test/spec/servicesForAdmin.js" />
+        <item url="file://$PROJECT_DIR$/src/route.js" />
+        <item url="file://$PROJECT_DIR$/test/spec/servicesForOperator.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/test/spec/visitServerRootSpec.js" />
+      <root url="file://$PROJECT_DIR$/test/spec/testingSpec.js" />
+      <root url="file://$PROJECT_DIR$/test/spec/servicesForDeveloper.js" />
+      <root url="file://$PROJECT_DIR$/test/spec/servicesForAdmin.js" />
+      <root url="file://$PROJECT_DIR$/src/route.js" />
+      <root url="file://$PROJECT_DIR$/test/spec/servicesForOperator.js" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,43 @@
+# test cases to ensure we create correct restful services for AiR RESTFul Service
+# How these test cases are developed:
+# We just need to validate if express app has defined below url as "used".
+# We are going to retrieve "app" from source code then validate its
+# "used" properties.
+
+# based on my rough design, we need to provide below services
+#========= For Operator =================
+# root html
+# air/index.html
+
+# search Test Card (by model number) or Result (by order number)
+# search test card will return all match test cards.
+# search result will return all available sessions associated with the order number.
+# air/search?model=<model number>
+# air/search?orderNumber=<order number>
+
+# load Test Card by testCardId
+# air/testCard/:testCardId
+# this url supports GET, POST, PUT and DELETE methods.
+
+# load result by order number and session key
+# air/result/:orderNumber/:sessionKey
+# this url supports GET, POST, PUT and DELETE methods.
+
+#========== For Developer =================
+# root html for developer
+# air/develop/index.html
+
+# url to get next available Test Card ID
+# air/develop/newTestCardId?family=<family>&model=<model>&option=<option>
+# this url supports GET
+
+#========== For Release Administrator =====
+# root page for administrator
+# air/admin/index.html
+
+# approve one Test Card release
+# air/admin/release?testCardId=<test card id>
+
+# upgrade class from C/D to A/B
+# air/admin/approve?testCardId=<test card id>&currentClass=<current class>&approvedClass=<approved class>
+

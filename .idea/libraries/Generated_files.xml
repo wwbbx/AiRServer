@@ -4,19 +4,21 @@
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/test/spec/visitServerRootSpec.js" />
         <item url="file://$PROJECT_DIR$/test/spec/testingSpec.js" />
-        <item url="file://$PROJECT_DIR$/test/spec/servicesForDeveloper.js" />
-        <item url="file://$PROJECT_DIR$/test/spec/servicesForAdmin.js" />
+        <item url="file://$PROJECT_DIR$/test/spec/servicesForDeveloperRoute.js" />
+        <item url="file://$PROJECT_DIR$/test/spec/servicesForAdminRoute.js" />
         <item url="file://$PROJECT_DIR$/src/route.js" />
-        <item url="file://$PROJECT_DIR$/test/spec/servicesForOperator.js" />
+        <item url="file://$PROJECT_DIR$/test/spec/serviceForOperator.js" />
+        <item url="file://$PROJECT_DIR$/test/spec/servicesForOperatorRoute.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/test/spec/visitServerRootSpec.js" />
       <root url="file://$PROJECT_DIR$/test/spec/testingSpec.js" />
-      <root url="file://$PROJECT_DIR$/test/spec/servicesForDeveloper.js" />
-      <root url="file://$PROJECT_DIR$/test/spec/servicesForAdmin.js" />
+      <root url="file://$PROJECT_DIR$/test/spec/servicesForDeveloperRoute.js" />
+      <root url="file://$PROJECT_DIR$/test/spec/servicesForAdminRoute.js" />
       <root url="file://$PROJECT_DIR$/src/route.js" />
-      <root url="file://$PROJECT_DIR$/test/spec/servicesForOperator.js" />
+      <root url="file://$PROJECT_DIR$/test/spec/serviceForOperator.js" />
+      <root url="file://$PROJECT_DIR$/test/spec/servicesForOperatorRoute.js" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
